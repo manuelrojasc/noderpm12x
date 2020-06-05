@@ -64016,24 +64016,33 @@ var PmaoComponent = /** @class */ (function () {
                 ]
             },
             {
-                nombre: "SEGURIDAD Y SALUD OCUPACIONAL",
+                nombre: "PLAN DE SEGURIDAD Y SALUD OCUPACIONAL",
                 opciones: [
-                    { nombre: "Presencia de Vectores(mosquitos, zancudos, gallinazos, perros, etc)", id: "10" },
-                    { nombre: "Ausencia de Equipos de Protección Personal en los trabajadores", id: "11" },
-                    { nombre: "Movimientos repetitivos en el personal de la Planta", id: "12" },
-                    { nombre: "Uso de inPosturas inadecuadas en el personal de la Planta", id: "13" },
+                    { nombre: "Riesgo de Picadura de Vectores Transmisores", id: "10" },
+                    { nombre: "Riesgo de Contagio de Covid-19", id: "11" },
+                    { nombre: "Riesgo de Caida en Desnivel", id: "12" },
+                    { nombre: "Riesgo de Deshidrataciòn", id: "13" },
+                    { nombre: "Riesgo de Lesiòn Traumàtica Superficial por Frio", id: "14" },
+                    { nombre: "Riesgo de Quemadura", id: "15" },
+                    { nombre: "Riesgo de Intoxicacion", id: "16" },
+                    { nombre: "Riesgo de Electrocuciòn", id: "17" },
+                    { nombre: "Riesgo de Cortaduras y Golpeamiento", id: "18" },
+                    { nombre: "Riesgo de Atrapamiento en Maquinas", id: "19" },
+                    { nombre: "Riesgo  Ergonòmico", id: "20" },
+                    { nombre: "Riesgo Psicosocial", id: "21" },
+                    { nombre: "Riesgo de Mordeduras de Serpiente", id: "22" },
                 ]
             },
             {
                 nombre: "PRODUCTIVIDAD ",
                 opciones: [
-                    { nombre: "Número de familias sensibilizadas", id: "14" },
-                    { nombre: "Ubicación de familias sensibilizadas", id: "15" },
-                    { nombre: "Número de familias activas en el programa", id: "16" },
-                    { nombre: "Peso de residuos sólidos orgánicos recolectados por dia", id: "17" },
-                    { nombre: "Peso de residuos sólidos inorgánicos recolectados por dia", id: "18" },
-                    { nombre: "Peso de residuos sólidos inorganicos dentro de los organicos", id: "19" },
-                    { nombre: "Peso de residuos sólidos orgánicos dentro de los inorgánicos", id: "20" },
+                    { nombre: "Número de familias sensibilizadas", id: "23" },
+                    { nombre: "Ubicación de familias sensibilizadas", id: "24" },
+                    { nombre: "Número de familias activas en el programa", id: "25" },
+                    { nombre: "Peso de residuos sólidos orgánicos recolectados por dia", id: "26" },
+                    { nombre: "Peso de residuos sólidos inorgánicos recolectados por dia", id: "27" },
+                    { nombre: "Peso de residuos sólidos inorganicos dentro de los organicos", id: "28" },
+                    { nombre: "Peso de residuos sólidos orgánicos dentro de los inorgánicos", id: "29" },
                 ]
             }
         ];
@@ -66658,7 +66667,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var SendMessageService = /** @class */ (function () {
     function SendMessageService(_http) {
         this._http = _http;
-        this.urlControlador = "https://www.apiapec.tk/api/";
+        this.urlControlador = "http://localhost:8042/";
     }
     SendMessageService.prototype.sendMessagingDevices = function (message, title, data, user) {
         var notification = {
