@@ -66667,7 +66667,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var SendMessageService = /** @class */ (function () {
     function SendMessageService(_http) {
         this._http = _http;
-        this.urlControlador = "http://localhost:8042/";
+        this.urlControlador = "https://www.apiapec.tk/api/";
     }
     SendMessageService.prototype.sendMessagingDevices = function (message, title, data, user) {
         var notification = {
